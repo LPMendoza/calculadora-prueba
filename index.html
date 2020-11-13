@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="theme-color" content="">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="cuerpo">
+        <table>
+            <tr>
+                <td id="texto" class="resultado" colspan="4"></td>
+            </tr>
+            <tr>
+                <td><button class="memoria" onclick="agregarMemoria()">M+</button></td>
+                <td><button onclick="eliminarMemoria()">M-</button></td>
+                <td><button onclick="obtenerMemoria()">M</button></td>
+                <td><button onclick="reset()">C</button></td>
+            </tr>
+            <tr>
+                <td><button id="num7" value="7" onclick="agregar7()">7</button></td>
+                <td><button id="num8" value="8" onclick="agregar8()">8</button></td>
+                <td><button id="num9" value="9" onclick="agregar9()">9</button></td>
+                <td><button id="sumar" onclick="suma()">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="num4" value="4" onclick="agregar4()">4</button></td>
+                <td><button id="num5" value="5" onclick="agregar5()">5</button></td>
+                <td><button id="num6" value="6" onclick="agregar6()">6</button></td>
+                <td><button id="restar" onclick="resta()">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="num1" value="1" onclick="agregar1()">1</button></td>
+                <td><button id="num2" value="2" onclick="agregar2()">2</button></td>
+                <td><button id="num3" value="3" onclick="agregar3()">3</button></td>
+                <td><button id="multiplicar" onclick="multiplicacion()">x</button></td>
+            </tr>
+            <tr>
+                <td><button id="punto" value="." onclick="decimal()">.</button></td>
+                <td><button id="num0" value="0" onclick="agregar0()">0</button></td>
+                <td><button id="igual" onclick="resolver()">=</button></td>
+                <td><button id="dividir" onclick="division()">/</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="calculadora.js"></script>
+</html>

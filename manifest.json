@@ -1,0 +1,13 @@
+{
+    "name":"Calculadora PWA",
+    "short_name":"Calculadora PWA",
+    "description":"Calculadora basica",
+    "bacground_color":"#2B2B2B",
+    "theme_color":"#F0DB4F",
+    "orientation":"portrait",
+    "display": "standalone",
+    "start_url":"./?utm_source=calculadora_pwa_manifest",
+    "scope": "./",
+    "lang": "es-MX"
+
+}
