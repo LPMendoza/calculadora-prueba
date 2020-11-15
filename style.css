@@ -6,7 +6,7 @@ html,body{
     display: flex; 
 }
 .resultado{
-    font-size: 50px;
+    font-size: 45px;
     text-align: end;
     box-sizing: border-box;
     border:1px solid black;
@@ -18,21 +18,21 @@ table{
     border-collapse: collapse;
     width: 100%;
     height: 100vh;
-    
     table-layout: fixed;
 }
-#texto{
-    padding: 50px 0 0 0;
-}
 table tr td{
-    border: 1px solid black;
+    height: 100px;
+    background-color:black;
     box-sizing: border-box;
     word-wrap: break-word;
+    color: white; 
 }
 table tr td button{
     border: none;
     width: 100%;
     height: 100%;
     background: none;
-    font-size: 50px;
+    font-size: 45px;
+    background-color: #22a6b3;
+    color: white; 
 }
