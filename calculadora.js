@@ -1,5 +1,4 @@
 var num1;
-var operador="";
 var memoria = 0;
 var texto = document.getElementById('texto');
 
@@ -50,6 +49,7 @@ function decimal(){
 function suma(){
     num1 = texto.textContent;
     operador = "+";
+    texto.innerHTML = "";
 }
 function resta(){
     num1 = texto.textContent;
