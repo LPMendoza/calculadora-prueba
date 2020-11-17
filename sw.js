@@ -1,4 +1,4 @@
-const CACHE_NAME = 'v1_cache_calculadora_pwa',
+const CACHE_NAME = 'cache_calculadora_pwa',
 toCache = [
     './',
     './style.css',
@@ -31,7 +31,7 @@ self.addEventListener('activate',e=>{
         .then(() => self.clients.claim())
     )
 });
-
+/*
 //Recupera una URL 
 self.addEventListener('fetch',e=>{
     e.respondWith(
@@ -42,4 +42,4 @@ self.addEventListener('fetch',e=>{
             return fetch(e.request);
         })
     )
-});
+});*/
