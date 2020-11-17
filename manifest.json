@@ -3,7 +3,7 @@
     "short_name":"Calculadora PWA",
     "description":"Calculadora basica",
     "bacground_color":"#2B2B2B",
-    "theme_color":"#F0DB4F",
+    "theme_color":"#22a6b3",
     "orientation":"portrait",
     "display": "standalone",
     "start_url":"./?utm_source=calculadora_pwa_manifest",
