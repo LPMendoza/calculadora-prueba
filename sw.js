@@ -31,7 +31,7 @@ self.addEventListener('activate',e=>{
         .then(() => self.clients.claim())
     )
 });
-/*
+
 //Recupera una URL 
 self.addEventListener('fetch',e=>{
     e.respondWith(
@@ -42,4 +42,4 @@ self.addEventListener('fetch',e=>{
             return fetch(e.request);
         })
     )
-});*/
+});
