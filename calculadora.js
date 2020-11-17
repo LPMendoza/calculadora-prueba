@@ -2,6 +2,11 @@ var num1;
 var memoria = 0;
 var texto = document.getElementById('texto');
 
+function agregar(){
+    var numero = document.getElementsByName('num').value;
+    texto.innerHTML = texto.textContent + numero; 
+}
+/*
 function agregar9(){
     var numero = document.getElementById('num9').value;
     texto.innerHTML = texto.textContent + numero; 
@@ -44,7 +49,7 @@ function agregar0(){
 function decimal(){
     var numero = document.getElementById('decimal').value;
     texto.innerHTML = texto.textContent + numero; 
-}
+}*/
 
 function suma(){
     num1 = texto.textContent;
