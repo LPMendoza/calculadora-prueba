@@ -5,7 +5,6 @@ toCache = [
     './bootstrap.min.css',
     './script.js',
     './calculadora.js',
-    './manifest.json'
 ]
 
 //Fase de instalacion de SW, almacena en cache los activos estaticos
