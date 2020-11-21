@@ -24,7 +24,7 @@ self.addEventListener('activate',e=>{
         caches.keys().then(cacheNombres =>{
             cacheNombres.map(cacheNombre =>{
                 if(cacheWhitelist.indexOf(cacheNombre)===-1 && cacheNombre.indexOf(CACHE_NAME + CACHE_VERSION) === -1 ){
-                    
+                    console.log("nueva versión encontrada")
                     return caches.delete(cacheNombre)
                 }
             })
