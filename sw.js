@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cache_calculadora_pwa',
+const CACHE_NAME = 'cache_calculadora_pwa-', CACHE_VERSION = "1",
 toCache = [
     './',
     './style.css',
@@ -10,7 +10,7 @@ toCache = [
 //Fase de instalacion de SW, almacena en cache los activos estaticos
 self.addEventListener('install',e=>{
     e.waitUntil(
-        caches.open(CACHE_NAME).then(cache =>{
+        caches.open(CACHE_NAME + CACHE_VERSION).then(cache =>{
             return cache.addAll(toCache).then(() => self.skipWaiting())
         })
         .catch(error => console.log("Fallo el registro de cache",error))
@@ -23,7 +23,8 @@ self.addEventListener('activate',e=>{
     e.waitUntil(
         caches.keys().then(cacheNombres =>{
             cacheNombres.map(cacheNombre =>{
-                if(cacheWhitelist.indexOf(cacheNombre)===-1){
+                if(cacheWhitelist.indexOf(cacheNombre)===-1 && cacheNombre.indexOf(CACHE_NAME + CACHE_VERSION) === -1 ){
+                    
                     return caches.delete(cacheNombre)
                 }
             })
